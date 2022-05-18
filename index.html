@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header-container">
+        <div class="header">
+          <img src="./images/odin-lined.png" />
+          <h1>ODIN</h1>
+        </div>
+      </div>
+      <div class="form-container">
+        <div class="description">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <span class="italic">now</span>
+            to get started.
+          </p>
+          <p>You <span class="italic">know</span> you want to.</p>
+        </div>
+        <div class="form">
+          <form>
+            <div class="form-box">
+              <h3 class="form-title one">Let's do this!</h3>
+              <div class="form-input two">
+                <label for="firstName">FIRST NAME</label>
+                <input id="firstName" name="firstName" type="text" required />
+              </div>
+
+              <div class="form-input three">
+                <label for="lastName">LAST NAME</label>
+                <input id="lastName" type="text" name="lastName" required />
+              </div>
+
+              <div class="form-input four">
+                <label for="emailAddress">EMAIL</label>
+                <input
+                  id="emailAddress"
+                  type="email"
+                  name="emailAddress"
+                  pattern="\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b"
+                  required
+                />
+              </div>
+
+              <div class="form-input five">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input
+                  id="phoneNumber"
+                  type="text"
+                  name="phoneNumber"
+                  pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$
+                  "
+                />
+              </div>
+
+              <div class="form-input six">
+                <label for="initialPassword">PASSWORD</label>
+                <input
+                  id="initialPassword"
+                  type="password"
+                  name="password"
+                  required
+                />
+              </div>
+
+              <div class="form-input seven">
+                <label for="confirmedPassword">CONFIRM PASSWORD</label>
+                <input
+                  id="confirmedPassword"
+                  type="password"
+                  name="confirmedPassword"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit" value="Submit">Create Account</button>
+          </form>
+          <p class="sign-in">
+            Already have an account? <span><a href="#">Log In</a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

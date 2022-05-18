@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./fonts/Norse-Bold.otf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  height: 100vh;
+}
+
+.header-container {
+  background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  background-color: rgb(16, 16, 16, 0.4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 250px;
+  height: 170px;
+}
+
+.header img {
+  width: 90px;
+  height: 150px;
+}
+
+.header h1 {
+  position: relative;
+  top: 20px;
+  font-family: "Norse-Bold";
+  font-size: 8rem;
+  display: inline-block;
+  color: white;
+}
+
+.form-box {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  background-color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 150px;
+  align-items: flex-start;
+}
+
+.description {
+  font-size: 2rem;
+  position: relative;
+  left: 20px;
+  font-weight: bold;
+}
+
+button[value="Submit"] {
+  background-color: #596d48;
+  color: white;
+  position: relative;
+  top: 20px;
+  padding: 10px 30px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  left: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.form-box {
+  display: grid;
+  grid-gap: 20px;
+  width: 80vw;
+  grid-template-areas:
+    "a a . . ."
+    "b c . . ."
+    "d e . . ."
+    "f g . . .";
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  color: rgb(16, 16, 16, 0.7);
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.one {
+  grid-area: a;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.two {
+  grid-area: b;
+}
+
+.three {
+  grid-area: c;
+}
+
+.four {
+  grid-area: d;
+}
+
+.five {
+  grid-area: e;
+}
+
+.six {
+  grid-area: f;
+}
+
+.seven {
+  grid-area: g;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+.sign-in {
+  position: relative;
+  left: 20px;
+  top: 30px;
+  font-size: 1.05rem;
+}
+
+span a {
+  color: #596d48;
+}
+
+span a:link {
+  text-decoration: none;
+}
